@@ -1,15 +1,21 @@
-.h1Tag{
-    border: 2px solid rgb(47, 136, 209);
-    background-color: rgb(218, 99, 208);
-    width: fit-content;
-    margin: 10px auto 10px auto;
-    color: rgb(46, 34, 32);
+.h1Tag {
+  border: 2px solid rgb(47, 136, 209);
+  background-color: rgb(218, 99, 208);
+  width: fit-content;
+  margin: 10px auto 10px auto;
+  color: rgb(46, 34, 32);
+  padding-left: 5px;
+  padding-right: 5px;
 }
-.inputTag{
-    text-decoration: none;
-    outline-color: violet;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid teal;
+.inputTag {
+  text-decoration: none;
+  //outline-color: violet;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid teal;
+}
+h1 {
+  color: rgb(50, 161, 161);
 }
