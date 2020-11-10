@@ -4,7 +4,7 @@ import ToDoApp from '../ToDoApp'
 import ReactDom from "react-dom"
 
 test("renders Correctly",()=>{
-    const root= document.createElement("div");
-    ReactDom.render(<ToDoApp/>,root)
-    expect(root.querySelector("h1").textContent).toBe("Add Todo Here");
+    const dammal= document.createElement("div");
+    ReactDom.render(<ToDoApp/>,dammal)
+    expect(dammal.querySelector("h1").textContent).toBe("Add Todo Here");
 })
