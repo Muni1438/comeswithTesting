@@ -45,7 +45,7 @@ function ToDoApp() {
         <div>
         <form onSubmit={submitHandular}>
         <h1>Add Todo Here</h1>
-            <input placeholder="Add Todo Here" className="inputTag" type="text" value={Text} onChange={e=>setText(e.target.value)} />
+            <input placeholder="Add Todo  Display Here" className="inputTag" type="text" value={Text} onChange={e=>setText(e.target.value)} />
         </form>
         {state?state.map(data=><h1 className="h1Tag" key={data.id} onClick={()=>dispatch(deleting(data.id))}>{data.Text}</h1>):<h3>Nothing To Delete</h3>}
         </div>

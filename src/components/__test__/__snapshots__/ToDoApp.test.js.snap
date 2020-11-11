@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`my todo snapshot  1`] = `
+<DocumentFragment>
+  <div>
+    <form>
+      <h1>
+        Add Todo Here
+      </h1>
+      <input
+        class="inputTag"
+        placeholder="Add Todo  Display Here"
+        type="text"
+        value=""
+      />
+    </form>
+  </div>
+</DocumentFragment>
+`;
