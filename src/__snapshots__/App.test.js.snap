@@ -6,17 +6,22 @@ exports[`Take a Snapshot 1`] = `
     class="App"
   >
     <div>
-      <form>
+      <form
+        data-testid="form"
+      >
         <h1>
           Add Todo Here
         </h1>
         <input
           class="inputTag"
-          placeholder="Add Todo  Display Here"
+          placeholder="Add Todo To Display"
           type="text"
           value=""
         />
       </form>
+      <h3>
+        Nothing To Delete
+      </h3>
     </div>
   </div>
 </DocumentFragment>

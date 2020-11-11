@@ -1,5 +1,5 @@
 import React from 'react'
-import {render,cleanup} from "@testing-library/react"
+import {render,cleanup,fireEvent} from "@testing-library/react"
 import ToDoApp from '../ToDoApp'
 import ReactDom from "react-dom"
 
@@ -14,4 +14,14 @@ test("my todo snapshot ",()=>{
     const {asFragment}= render(<ToDoApp/>)
 
     expect(asFragment(<ToDoApp/>)).toMatchSnapshot()
+})
+
+// it (`Have an empty ${""}`,()=>{
+//     const {getByTestId}=render(<ToDoApp/>)
+
+//     expect(getByTestId("Text")).toHaveTextContent("")
+// })
+test("Submit Handular",()=>{
+    const {getByTestId,getByLabelText}=render(<ToDoApp/>)
+    fireEvent.submit(getByTestId("form"))
 })
