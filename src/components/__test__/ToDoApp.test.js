@@ -22,6 +22,6 @@ test("my todo snapshot ",()=>{
 //     expect(getByTestId("Text")).toHaveTextContent("")
 // })
 test("Submit Handular",()=>{
-    const {getByTestId,getByLabelText}=render(<ToDoApp/>)
+    const {getByTestId}=render(<ToDoApp/>)
     fireEvent.submit(getByTestId("form"))
 })

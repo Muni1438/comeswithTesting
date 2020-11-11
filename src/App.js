@@ -1,10 +1,12 @@
 import './App.scss';
+import BasicTesting from './components/BasicTesting';
 import ToDoApp from './components/ToDoApp';
 
 function App() {
   return (
     <div className="App">
-     <ToDoApp/>
+    { /*<ToDoApp/>*/}
+    <BasicTesting/>
     </div>
   );
 }

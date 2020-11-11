@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`all about h1 tag should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <h1
+      data-testid="h1Content"
+    >
+      Hello there I'm back, and i'm came here with testing knowlwdge
+    </h1>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`all about should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <h1
+      data-testid="h1Content"
+    >
+      Hello there I'm back, and i'm came here with testing knowlwdge
+    </h1>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <h1
+      data-testid="h1Content"
+    >
+      Hello there I'm back, and i'm came here with testing knowlwdge
+    </h1>
+  </div>
+</DocumentFragment>
+`;

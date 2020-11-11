@@ -6,22 +6,11 @@ exports[`Take a Snapshot 1`] = `
     class="App"
   >
     <div>
-      <form
-        data-testid="form"
+      <h1
+        data-testid="h1Content"
       >
-        <h1>
-          Add Todo Here
-        </h1>
-        <input
-          class="inputTag"
-          placeholder="Add Todo To Display"
-          type="text"
-          value=""
-        />
-      </form>
-      <h3>
-        Nothing To Delete
-      </h3>
+        Hello there I'm back, and i'm came here with testing knowlwdge
+      </h1>
     </div>
   </div>
 </DocumentFragment>
