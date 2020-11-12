@@ -4,34 +4,23 @@ exports[`all about h1 tag should render correctly 1`] = `
 <DocumentFragment>
   <div>
     <h1
-      data-testid="h1Content"
+      aria-label="h1Content"
+      class="tagh1"
     >
-      Hello there I'm back, and i'm came here with testing knowlwdge
+      Hello there I'm back, and i'm here testing knowlwdge
     </h1>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`all about should render correctly 1`] = `
-<DocumentFragment>
-  <div>
-    <h1
-      data-testid="h1Content"
-    >
-      Hello there I'm back, and i'm came here with testing knowlwdge
-    </h1>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`should render correctly 1`] = `
-<DocumentFragment>
-  <div>
-    <h1
-      data-testid="h1Content"
-    >
-      Hello there I'm back, and i'm came here with testing knowlwdge
-    </h1>
+    <input
+      data-testid="inputTag"
+      placeholder="Enter Text"
+      type="text"
+      value=""
+    />
+    <input
+      data-testid="outputTag"
+      placeholder="OutPutTag"
+      type="text"
+      value=""
+    />
   </div>
 </DocumentFragment>
 `;
