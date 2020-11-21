@@ -1,5 +1,5 @@
 import React from "react"
-import {render, fireEvent, getByLabelText} from "@testing-library/react"
+import {render, fireEvent, getByTestId} from "@testing-library/react"
 import BasicTesting from "../BasicTesting"
 
 describe("all about h1 tag",()=>{
@@ -38,4 +38,21 @@ describe("all about output tag",()=>{
         expect(OutPutTesting.value).toBe("outputcontent")
     })
 
+})
+describe("All About Count Button",()=>{
+    test("increase count",()=>{
+     const {getByText,getByLabelText}= render(<BasicTesting/>)
+    fireEvent.click(getByText("Increase"))
+    expect(getByLabelText("countMe")).toHaveTextContent("1")
+})
+    test("Decrease Count",()=>{
+        const {getByText,getByLabelText}= render(<BasicTesting/>)
+        fireEvent.click(getByText("Decrease"))
+        expect(getByLabelText("countMe")).toHaveTextContent("-1")
+    })
+    test("Reset Count",()=>{
+        const {getByText,getByLabelText}= render(<BasicTesting/>)
+        fireEvent.click(getByText("Reset"))
+        expect(getByLabelText("countMe")).toHaveTextContent("0")
+    })
 })

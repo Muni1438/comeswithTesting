@@ -25,3 +25,10 @@ test("Submit Handular",()=>{
     const {getByTestId}=render(<ToDoApp/>)
     fireEvent.submit(getByTestId("form"))
 })
+describe("input tag",()=>{
+    const {getByPlaceholderText} = render(<ToDoApp/>)
+    const InputOfMe =getByPlaceholderText("Add Todo To Display")
+    fireEvent.change(InputOfMe,{target:{value:"All About"}})
+    // expect(getByPlaceholderText("Add Todo To Display").value).toBe("All About")
+        expect(InputOfMe.value).toBe("All About" )
+})

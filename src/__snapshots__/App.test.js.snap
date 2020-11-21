@@ -6,24 +6,41 @@ exports[`Take a Snapshot 1`] = `
     class="App"
   >
     <div>
-      <h1
-        aria-label="h1Content"
-        class="tagh1"
-      >
-        Hello there I'm back, and i'm here testing knowlwdge
-      </h1>
-      <input
-        data-testid="inputTag"
-        placeholder="Enter Text"
-        type="text"
-        value=""
-      />
-      <input
-        data-testid="outputTag"
-        placeholder="OutPutTag"
-        type="text"
-        value=""
-      />
+      <form>
+        <h1
+          aria-label="h1Content"
+          class="tagh1"
+        >
+          Hello there I'm back, and i'm here testing knowlwdge
+        </h1>
+        <input
+          data-testid="inputTag"
+          placeholder="Enter Text"
+          type="text"
+          value=""
+        />
+        <input
+          data-testid="outputTag"
+          placeholder="OutPutTag"
+          type="text"
+          value=""
+        />
+        <button>
+          Increase
+        </button>
+        <button>
+          Decrease
+        </button>
+        <button>
+          Reset
+        </button>
+        <br />
+        <h1
+          aria-label="countMe"
+        >
+           0
+        </h1>
+      </form>
     </div>
   </div>
 </DocumentFragment>
